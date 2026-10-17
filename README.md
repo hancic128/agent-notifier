@@ -51,15 +51,15 @@ The script checks for Node ≥ 20, installs globally, and falls back to
 
 ```bash
 # try it without installing
-npx agent-notifier install
+npx @hancic128/agent-notifier install
 
 # or install globally
-npm install -g agent-notifier
+npm install -g @hancic128/agent-notifier
 agent-notifier install
 ```
 
-`pnpm add -g agent-notifier`, `yarn global add agent-notifier` and
-`bunx agent-notifier` work too.
+`pnpm add -g @hancic128/agent-notifier`, `yarn global add @hancic128/agent-notifier`
+and `bunx @hancic128/agent-notifier` work too.
 
 ### From source
 

@@ -1,5 +1,5 @@
 {
-  "name": "agent-notifier",
+  "name": "@hancic128/agent-notifier",
   "version": "0.0.1",
   "description": "Push notifications for Claude Code, Codex CLI and Kimi Code — Feishu, Lark, Slack, Bark, DingTalk, WeCom, PushDeer and Bluebird.",
   "keywords": [

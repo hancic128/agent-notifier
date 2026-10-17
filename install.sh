@@ -19,6 +19,7 @@
 set -eu
 
 PKG="agent-notifier"
+NPM_PKG="@hancic128/agent-notifier"
 VERSION="${AGENT_NOTIFIER_VERSION:-latest}"
 PREFIX="${AGENT_NOTIFIER_PREFIX:-}"
 NPM="${AGENT_NOTIFIER_NPM:-npm}"
@@ -93,7 +94,7 @@ ok "npm $("$NPM" --version)"
 
 # ---------------------------------------------------------------- install
 
-SPEC="${SPEC_OVERRIDE:-$PKG@$VERSION}"
+SPEC="${SPEC_OVERRIDE:-$NPM_PKG@$VERSION}"
 
 install_global() {
   "$NPM" install -g "$SPEC" --no-fund --no-audit >/dev/null 2>&1

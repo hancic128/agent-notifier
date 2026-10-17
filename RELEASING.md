@@ -7,16 +7,17 @@ GitHub release.
 
 ### 1. npm package name
 
-`agent-notifier` must be available. Check:
+The package is published as `@hancic128/agent-notifier` (the unscoped name is
+taken by an unrelated project). The installed command is still `agent-notifier`
+because the `bin` entry keeps that name.
+
+Scoped packages default to private publishing; `publishConfig.access` is set to
+`"public"` so no extra flag is needed. Verify ownership:
 
 ```bash
-npm view agent-notifier
+npm view @hancic128/agent-notifier
 ```
 
-If it is taken, either rename the package in `package.json` (and update the
-`bin` entry, README, and `install.sh`), or publish under a scope such as
-`@yourname/agent-notifier` — then also change `publishConfig.access` if the
-scope is private.
 
 ### 2. Authentication — pick one
 
@@ -116,8 +117,8 @@ npm publishes it under the `latest` tag by default. To avoid that, use
 ## Verifying a release
 
 ```bash
-npm view agent-notifier version
-npx agent-notifier@latest --version
+npm view @hancic128/agent-notifier version
+npx @hancic128/agent-notifier@latest --version
 
 # verify provenance (on npmjs.com the package shows a "Built and signed" badge)
 npm audit signatures
@@ -127,7 +128,7 @@ npm audit signatures
 
 npm does not allow republishing a version. If a release is broken:
 
-1. `npm deprecate agent-notifier@0.2.1 "broken, use 0.2.2"`
+1. `npm deprecate @hancic128/agent-notifier@0.2.1 "broken, use 0.2.2"`
 2. publish a fixed patch version
 3. delete or edit the GitHub release notes if needed
 
