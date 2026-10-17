@@ -7,6 +7,8 @@
 
 [English](README.md)
 
+![agent-notifier 通知卡片](docs/screenshot.png)
+
 ## 为什么做这个
 
 AI 编程任务动辄跑几分钟，然后无声无息地停下。你一旦离开电脑，就不知道它是

@@ -8,6 +8,8 @@ the title and **the agent's final reply** as the body.
 
 [中文文档](README.zh-CN.md)
 
+![agent-notifier notification card](docs/screenshot.png)
+
 ## Why
 
 Coding agents run for minutes at a time and then stop silently. If you step
