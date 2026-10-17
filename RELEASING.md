@@ -7,7 +7,7 @@ GitHub release.
 
 ### 1. npm package name
 
-The package is published as `@hancic128/agent-notifier` (the unscoped name is
+The package is published as `@hancic-site/agent-notifier` (the unscoped name is
 taken by an unrelated project). The installed command is still `agent-notifier`
 because the `bin` entry keeps that name.
 
@@ -15,7 +15,7 @@ Scoped packages default to private publishing; `publishConfig.access` is set to
 `"public"` so no extra flag is needed. Verify ownership:
 
 ```bash
-npm view @hancic128/agent-notifier
+npm view @hancic-site/agent-notifier
 ```
 
 
@@ -117,8 +117,8 @@ npm publishes it under the `latest` tag by default. To avoid that, use
 ## Verifying a release
 
 ```bash
-npm view @hancic128/agent-notifier version
-npx @hancic128/agent-notifier@latest --version
+npm view @hancic-site/agent-notifier version
+npx @hancic-site/agent-notifier@latest --version
 
 # verify provenance (on npmjs.com the package shows a "Built and signed" badge)
 npm audit signatures
@@ -128,7 +128,7 @@ npm audit signatures
 
 npm does not allow republishing a version. If a release is broken:
 
-1. `npm deprecate @hancic128/agent-notifier@0.2.1 "broken, use 0.2.2"`
+1. `npm deprecate @hancic-site/agent-notifier@0.2.1 "broken, use 0.2.2"`
 2. publish a fixed patch version
 3. delete or edit the GitHub release notes if needed
 

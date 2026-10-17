@@ -19,7 +19,7 @@
 set -eu
 
 PKG="agent-notifier"
-NPM_PKG="@hancic128/agent-notifier"
+NPM_PKG="@hancic-site/agent-notifier"
 VERSION="${AGENT_NOTIFIER_VERSION:-latest}"
 PREFIX="${AGENT_NOTIFIER_PREFIX:-}"
 NPM="${AGENT_NOTIFIER_NPM:-npm}"

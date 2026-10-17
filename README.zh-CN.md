@@ -49,14 +49,14 @@ curl -fsSL https://raw.githubusercontent.com/hancic128/agent-notifier/main/insta
 
 ```bash
 # 免安装试用
-npx @hancic128/agent-notifier install
+npx @hancic-site/agent-notifier install
 
 # 或全局安装
-npm install -g @hancic128/agent-notifier
+npm install -g @hancic-site/agent-notifier
 agent-notifier install
 ```
 
-也支持 `pnpm add -g @hancic128/agent-notifier`、`yarn global add @hancic128/agent-notifier`、`bunx @hancic128/agent-notifier`。
+也支持 `pnpm add -g @hancic-site/agent-notifier`、`yarn global add @hancic-site/agent-notifier`、`bunx @hancic-site/agent-notifier`。
 
 ### 从源码构建
 
