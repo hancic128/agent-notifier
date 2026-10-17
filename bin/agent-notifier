@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+// Entry shim. Works with plain Node (no bun required): prefers the tsc build,
+// falls back to a bun-compiled single binary if one exists alongside it.
+
+import { existsSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const here = dirname(fileURLToPath(import.meta.url));
+const compiled = resolve(here, "../dist/node/cli.js");
+
+if (existsSync(compiled)) {
+  await import(compiled);
+} else {
+  console.error("agent-notifier: build output missing at dist/node/cli.js");
+  console.error("Run `npm run build` (or `npx tsc -p tsconfig.build.json`) first.");
+  process.exit(1);
+}

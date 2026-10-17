@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.idea/
+*.tgz
+*.tmp.*
+
+# test fixtures (kept in tests/)
+tests/fixtures/tmp/
+
+# backup files left by install/uninstall are intentional — do NOT gitignore
